@@ -1,0 +1,9 @@
+{
+    "liveServer.settings.donotShowInfoMsg": true,
+    "security.allowedUNCHosts": [
+        "wsl.localhost"
+    ],
+    "remote.SSH.remotePlatform": {
+        "pi.local": "linux"
+    }
+}

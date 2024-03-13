@@ -1,0 +1,36 @@
+2024-02-26 11:22:27.498 [info] 
+
+
+
+
+2024-02-26 11:22:27.548 [info] Extension host agent started.
+2024-02-26 11:22:27.771 [info] [127.0.0.1][96410a70][ManagementConnection] New connection established.
+2024-02-26 11:22:27.778 [info] [127.0.0.1][d225d605][ExtensionHostConnection] New connection established.
+2024-02-26 11:22:28.106 [info] [127.0.0.1][d225d605][ExtensionHostConnection] <2284> Launched Extension Host Process.
+2024-02-26 11:23:57.283 [info] [127.0.0.1][96410a70][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2024-02-26 11:23:57.574 [info] [127.0.0.1][d225d605][ExtensionHostConnection] <2284> Extension Host Process exited with code: 0, signal: null.
+2024-02-26 11:23:57.575 [info] Cancelling previous shutdown timeout
+2024-02-26 11:23:57.576 [info] Last EH closed, waiting before shutting down
+2024-02-26 11:24:06.861 [info] Got delay-shutdown request while in shutdown timeout, delaying
+2024-02-26 11:24:06.861 [info] Cancelling previous shutdown timeout
+2024-02-26 11:24:07.050 [info] [127.0.0.1][c0a73967][ManagementConnection] New connection established.
+2024-02-26 11:24:07.133 [info] [127.0.0.1][74651758][ExtensionHostConnection] New connection established.
+2024-02-26 11:24:07.154 [info] [127.0.0.1][74651758][ExtensionHostConnection] <2392> Launched Extension Host Process.
+2024-02-26 11:24:09.914 [error] CodeExpectedError: Could not find pty on pty host
+    at A.U (/home/diewert/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/out/vs/platform/terminal/node/ptyHostMain.js:43:32377)
+    at A.updateTitle (/home/diewert/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/out/vs/platform/terminal/node/ptyHostMain.js:43:27509)
+    at T.<computed> (/home/diewert/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/out/vs/platform/terminal/node/ptyHostMain.js:43:22735)
+    at Object.call (/home/diewert/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/out/vs/platform/terminal/node/ptyHostMain.js:34:5041)
+    at g.s (/home/diewert/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/out/vs/platform/terminal/node/ptyHostMain.js:32:5153)
+    at g.q (/home/diewert/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/out/vs/platform/terminal/node/ptyHostMain.js:32:4662)
+    at a.value (/home/diewert/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/out/vs/platform/terminal/node/ptyHostMain.js:32:4064)
+    at i.y (/home/diewert/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/out/vs/platform/terminal/node/ptyHostMain.js:27:1906)
+    at i.fire (/home/diewert/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/out/vs/platform/terminal/node/ptyHostMain.js:27:2123)
+    at process.ce (/home/diewert/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/out/vs/platform/terminal/node/ptyHostMain.js:25:10117)
+    at process.emit (node:events:513:28)
+    at emit (node:internal/child_process:937:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+2024-02-26 11:29:06.864 [info] New EH opened, aborting shutdown
+2024-02-26 11:42:14.994 [info] [127.0.0.1][9fbe4365][ManagementConnection] New connection established.
+2024-02-26 11:42:15.099 [info] [127.0.0.1][9f17aa48][ExtensionHostConnection] New connection established.
+2024-02-26 11:42:15.122 [info] [127.0.0.1][9f17aa48][ExtensionHostConnection] <3194> Launched Extension Host Process.

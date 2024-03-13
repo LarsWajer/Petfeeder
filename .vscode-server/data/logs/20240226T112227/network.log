@@ -1,0 +1,2 @@
+2024-02-26 11:22:29.842 [error] node #2: https://mobile.events.data.microsoft.com/OneCollector/1.0?cors=true&content-type=application/x-json-stream - error POST getaddrinfo ENOTFOUND mobile.events.data.microsoft.com
+2024-02-26 11:22:32.707 [error] node #3: https://mobile.events.data.microsoft.com/OneCollector/1.0?cors=true&content-type=application/x-json-stream - error POST getaddrinfo ENOTFOUND mobile.events.data.microsoft.com
