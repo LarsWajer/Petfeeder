@@ -19,6 +19,13 @@ class DatabaseSeeder extends Seeder
 
         DB::table('counts')->insert([
             'times_pressed' => 0,
+        
+        ]);
+
+        DB::table('time_columns')->insert([
+            'tijd1' => '09:00:23',
+            'tijd2' => '00:00:00',
+            'tijd3' => '00:00:00',
         ]);
         // \App\Models\User::factory(10)->create();
 
