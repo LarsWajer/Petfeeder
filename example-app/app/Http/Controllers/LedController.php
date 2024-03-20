@@ -5,13 +5,16 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Count;
 use App\Models\Led;
+use App\Models\Tijd;
 
 class LedController extends Controller
+
 {
     function index(){
+        $tijd = Tijd::first();
         $count = Count::first();
         $led = Led::first();
-        return view('home')->with('count', $count)->with('led', $led);
+        return view('home')->with('tijd', $tijd)->with('count', $count)->with('led', $led);
     }
 
 

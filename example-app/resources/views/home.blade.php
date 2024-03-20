@@ -11,14 +11,14 @@
     <p> led state is {{$led->led_is_on}}</p>
     <a href="toggle_led"> KLIK HIER VOOR LED CHANGE</a>
 
-    <h4> Date:
-        <input type="time" id="Test_DatetimeLocal">
-        
-    </h4>
-<form method="GET" action="{{ url('/aanroepen') }}">
+    <form action="{{ url('/aanroepen') }}" method="POST">
+    @csrf
+    <input type="time" id="Test_DatetimeLocal" value="test" name="test">
 
-    <button type="submit">Submit</button>
-    <p> De tijd is: {{$tijd->tijd1 }} </p>
+    <button type="submit"> CONTINUE </button>
+</form>
+<form method="POST" action="{{ url('/aanroepen') }}">
+    <p> De tijd is: {{$tijd->tijd1}} </p>
 </form>
 </body>
 </html>
