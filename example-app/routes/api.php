@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Tijd;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TimeController;
@@ -15,7 +16,17 @@ use App\Http\Controllers\TimeController;
 |
 */
 
+Route::get('/tijd-voor-eten', function () {
+    // Haal de waarde van tijd1 op uit de database
+    $tijd = Tijd::first();
+    $tijd1 = $tijd->tijd1;
+
+    // Retourneer de waarde van tijd1, bijvoorbeeld als JSON
+    return response()->json([$tijd1]);
+});
+
 Route::get('/current-time', [TimeController::class, 'getCurrentTime']);
+
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });

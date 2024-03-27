@@ -13,12 +13,12 @@
 
     <form action="{{ url('/aanroepen') }}" method="POST">
     @csrf
-    <input type="time" id="Test_DatetimeLocal" value="test" name="test">
+    <input type="time" min="09:00" max="18:00" required id="Test_DatetimeLocal" value="0:00" name="test">
 
     <button type="submit"> CONTINUE </button>
 </form>
 <form method="POST" action="{{ url('/aanroepen') }}">
-    <p> De tijd is: {{$tijd->tijd1}} </p>
+    <p> Zo laat word er eten gegeven: {{$tijd->tijd1}} </p>
 </form>
 </body>
 </html>
