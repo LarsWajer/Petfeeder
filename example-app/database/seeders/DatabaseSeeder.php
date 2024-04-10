@@ -27,6 +27,11 @@ class DatabaseSeeder extends Seeder
             'tijd2' => '00:00',
             'tijd3' => '00:00',
         ]);
+
+        DB::table('User')->insert([
+            'user' => 'Lars',
+            'password' => 'Larsislekker!'
+        ]);
         // \App\Models\User::factory(10)->create();
 
         // \App\Models\User::factory()->create([

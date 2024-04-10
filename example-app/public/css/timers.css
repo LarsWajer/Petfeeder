@@ -115,6 +115,8 @@ body > div > section{
     width: 100px;
     font-size: 16px;
     height: 32px;
+    background-color: #3EB1c0;
+    margin-bottom: 20px;
 }
 
 .timer_container{
