@@ -31,7 +31,7 @@ class LedController extends Controller
 
         $led->save();
 
-        return redirect('/');
+        //return redirect('/');
     }
 
     function get_led_state(){

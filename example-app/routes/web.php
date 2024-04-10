@@ -22,3 +22,6 @@ Route::get('/toggle_led', [LedController::class, 'toggle_led']);
 Route::get('/get_led_state', [LedController::class, 'get_led_state']);
 Route::get('/button_pressed', [CountController::class, 'button_pressed']);
 Route::post('/aanroepen', [UserTimeController::class, 'submit_pressed']);
+Route::post('/aanroepen2', [UserTimeController::class, 'submit_pressed2']);
+Route::post('/aanroepen3', [UserTimeController::class, 'submit_pressed3']);
+

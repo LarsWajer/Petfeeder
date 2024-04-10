@@ -25,9 +25,25 @@ class UserTimeController extends Controller
         $tijd->save();
         return redirect('/');
         }
+        
+    public function submit_pressed2(Request $request){
 
-        
-        
+        $tijd2 = $request->input('test2');
+        $tijd = Tijd::first();
+        $tijd->tijd2 = $tijd2;
+        $tijd->save();
+        return redirect('/');
+        }
+    
+    
+    public function submit_pressed3(Request $request){
+
+        $tijd3 = $request->input('test3');
+        $tijd = Tijd::first();
+        $tijd->tijd3 = $tijd3;
+        $tijd->save();            
+        return redirect('/');
+        }
         //return redirect('/');
 }
 

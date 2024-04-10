@@ -25,6 +25,20 @@ Route::get('/tijd-voor-eten', function () {
     return response()->json([$tijd1]);
 });
 
+Route::get('/tijd-voor-eten2', function (){
+    $tijd = Tijd::first();
+    $tijd2 = $tijd->tijd2;
+
+    return response()->json([$tijd2]);
+});
+
+Route::get('/tijd-voor-eten3', function (){
+    $tijd = Tijd::first();
+    $tijd3 = $tijd->tijd3;
+
+    return response()->json([$tijd3]);
+});
+
 Route::get('/current-time', [TimeController::class, 'getCurrentTime']);
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
