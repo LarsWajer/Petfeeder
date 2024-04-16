@@ -10,7 +10,6 @@ class naarIndex extends Controller
 {
     public function index()
     {
-        $user = User_login::first();
-        return view('index')->with('user', $user);
+        return view('index');//->with('user', $user);
     }
 }

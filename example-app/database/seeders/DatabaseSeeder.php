@@ -29,8 +29,8 @@ class DatabaseSeeder extends Seeder
         ]);
 
         DB::table('User')->insert([
-            'user' => 'Lars',
-            'password' => 'Larsislekker!'
+            'username' => 'Lars',
+            'password' => bcrypt('w123'),
         ]);
         // \App\Models\User::factory(10)->create();
 

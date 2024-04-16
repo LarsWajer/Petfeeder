@@ -11,7 +11,7 @@ class naarLogin extends Controller
     public function index()
     {
         
-        return view('inlog')->with('user', $user);
+        return view('login');
     }
 }
 

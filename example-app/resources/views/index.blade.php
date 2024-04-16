@@ -7,14 +7,16 @@
     <title>Voeder app</title>
 </head>
 <body>
-    <a href="inlog">Link naar inlog</a>
-    <a href="timers">Link naar Timers</a>
+    <a href="/login">Link naar inlog</a>
+    <a href="/">Link naar Timers</a>
 
     <div class="wrapper">
         <h1>Cat feeder app</h1>
         <img src="Images/profielfoto.jpg" alt="sample profile pic"> 
         <figure> profielfoto gebruiker </figure>
-        <h2>{{$user->user}}</h2>
+        <h2> 
+            Welkom: {{ Auth::user()->username }}
+        </h2>
         <div class="button-container">
             <button class="Button_Boven">My Account</button>
         </div>
