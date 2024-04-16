@@ -7,7 +7,6 @@
     <title>Voeder app</title>
 </head>
 <body>
-    <a href="/login">Link naar inlog</a>
     <a href="/">Link naar Timers</a>
 
     <div class="wrapper">
@@ -20,6 +19,10 @@
         <div class="button-container">
             <button class="Button_Boven">My Account</button>
         </div>
+        <form method="POST" action="/logout">
+            @csrf
+            <button class="Button_Boven" type="submit">Logout</button>
+        </form>
         <section>  Next planned feeding time: 22-4-2023, 16:20
         </section>
         <button class="Button_midden">Timer</button>

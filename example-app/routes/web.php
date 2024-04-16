@@ -9,6 +9,10 @@ use App\Http\Controllers\naarLogin;
 use App\Http\Controllers\TestController;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
+use App\Http\Controllers\RegistratieController;
+use App\Http\Controllers\NaarRegistratie;
+use App\Http\Controllers\LogoutController;
+use App\Http\Controllers\NaarInlogController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,20 +25,21 @@ use App\Http\Controllers\Auth\AuthenticatedSessionController;
 |
 */
 
-Route::get('/',[LedController::class, 'index']);
+Route::get('/',[LedController::class, 'index'])->middleware('auth');
 Route::get('/toggle_led', [LedController::class, 'toggle_led']);
 Route::get('/get_led_state', [LedController::class, 'get_led_state']);
 Route::get('/button_pressed', [CountController::class, 'button_pressed']);
 Route::post('/aanroepen', [UserTimeController::class, 'submit_pressed']);
 Route::post('/aanroepen2', [UserTimeController::class, 'submit_pressed2']);
 Route::post('/aanroepen3', [UserTimeController::class, 'submit_pressed3']);
-Route::get('/index', [naarIndex::class, 'index']);
+Route::get('/index', [NaarInlogController::class, 'index'])->middleware('auth');
 
 //Route::get('/dashboard', [naarLogin::class, 'index'])->name('dashboard');
-Route::get('/login', [naarLogin::class, 'index']);
+Route::get('/login', [naarLogin::class, 'index'])->name('login');;
 Route::post('/login', [TestController::class, 'login']);
-
-
+Route::get('/register', [NaarRegistratie::class, 'index']);
+Route::post('/register', [RegistratieController::class, 'register']);
+Route::post('/logout', [LogoutController::class, 'logout'])->name('logout');
 
 
 

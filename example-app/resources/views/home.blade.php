@@ -6,7 +6,6 @@
     <title>Document</title>
     <link rel="stylesheet" href="{{ asset('css/timers.css') }}">
     <link rel="stylesheet" href="{{ asset('css/main.css') }}">
-    <a href="/login">Link naar inlog</a>
     <a href="/index">Link naar home</a>
 </head>
 <body>
